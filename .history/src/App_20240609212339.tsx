@@ -23,8 +23,8 @@ function App() {
           <AntdApp>
             <DevtoolsProvider>
               <Refine
-                dataProvider={dataProvider}
-                liveProvider={liveProvider}
+                dataProvider={dataProvider(gqlClient)}
+                liveProvider={liveProvider(wsClient)}
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
                 options={{

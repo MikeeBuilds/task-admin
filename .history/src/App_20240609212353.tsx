@@ -22,9 +22,8 @@ function App() {
       <RefineKbarProvider>
           <AntdApp>
             <DevtoolsProvider>
-              <Refine
-                dataProvider={dataProvider}
-                liveProvider={liveProvider}
+              <Refine                dataProvider={dataProvider()}
+                liveProvider={liveProvider()}
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
                 options={{
