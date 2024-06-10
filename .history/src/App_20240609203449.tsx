@@ -14,6 +14,7 @@ import routerBindings, {
   UnsavedChangesNotifier,
 } from "@refinedev/react-router-v6";
 import { App as AntdApp } from "antd";
+import { createClient } from "graphql-ws";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
@@ -26,8 +27,8 @@ function App() {
           <AntdApp>
             <DevtoolsProvider>
               <Refine
-                // dataProvider={dataProvider(gqlClient)}
-                // liveProvider={liveProvider(wsClient)}
+                dataProvider={dataProvider(gqlClient)}
+                liveProvider={liveProvider(wsClient)}
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
                 options={{
