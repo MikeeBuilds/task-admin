@@ -35,7 +35,7 @@ const getGraphQLErrors = (body: Record<"errors", GraphQLFormattedError[] | undef
         const code = errors?.[0]?.extensions?.code;
 
         return {
-            message: messages || JSON.stringify(errors),
+            message: messages || JSON.stringify(errros),
             statusCode: code || 500,
         }
     }
