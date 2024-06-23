@@ -1,6 +1,6 @@
 import { DealsChart, UpcomingEvents } from '@/components/home'
 import { Col, Row } from 'antd'
-
+import React from 'react'
 
 export const Home = () => {
   return (

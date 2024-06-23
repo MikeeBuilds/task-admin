@@ -1,13 +1,13 @@
-import { DealsChart, UpcomingEvents } from '@/components/home'
 import { Col, Row } from 'antd'
-
+import React from 'react'
 
 export const Home = () => {
   return (
     <Row
       gutter={[32, 32]}
       style={{
-        marginTop: '32px',
+        marginTop: 32,
+        marginBottom: 32,
       }}
     >
       <Col 
@@ -18,7 +18,7 @@ export const Home = () => {
           height: '460px',
         }}
       >
-        <UpcomingEvents />
+        CalendarUpcomingEvents
       </Col>
       <Col 
         xs={24}
@@ -28,7 +28,7 @@ export const Home = () => {
           height: '460px',
         }}
       >
-        <DealsChart />
+        DashboardDealsChart
       </Col>
     </Row>
   )
