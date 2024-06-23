@@ -7,15 +7,6 @@ import type { User } from "@/graphql/schema.types"
 
 const CurrentUser = () => {
     const { data: user } = useGetIdentity<User>()
-
-    const content = (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-        }}>
-
-        </div>
-    )
     
     return (
         <>
@@ -30,6 +21,8 @@ const CurrentUser = () => {
             src={user?.avatarUrl}
             size="default"
             style={{
+              backgroundColor: '#f56a00',
+              border: "none",
               cursor: "pointer",
             }}
           />

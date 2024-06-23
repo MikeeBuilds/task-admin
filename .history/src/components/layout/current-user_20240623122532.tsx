@@ -7,15 +7,6 @@ import type { User } from "@/graphql/schema.types"
 
 const CurrentUser = () => {
     const { data: user } = useGetIdentity<User>()
-
-    const content = (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-        }}>
-
-        </div>
-    )
     
     return (
         <>
@@ -28,10 +19,7 @@ const CurrentUser = () => {
           <CustomAvatar
             name={user?.name}
             src={user?.avatarUrl}
-            size="default"
-            style={{
-              cursor: "pointer",
-            }}
+            size={}
           />
         </Popover>
         </>

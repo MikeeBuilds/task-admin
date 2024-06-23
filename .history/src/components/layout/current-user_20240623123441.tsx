@@ -10,8 +10,7 @@ const CurrentUser = () => {
 
     const content = (
         <div style={{
-            display: "flex",
-            flexDirection: "column",
+            display = 
         }}>
 
         </div>

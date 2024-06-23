@@ -18,7 +18,7 @@ const CustomAvatar = ({ name, style, ...rest}: Props) => {
     }}
     {...rest}
     >
-        {getNameInitials(name || '')}
+        {getNameInitials}
     </AntdAvatar>
   )
 }
