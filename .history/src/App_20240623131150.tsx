@@ -15,7 +15,6 @@ import routerBindings, {
 import { App as AntdApp } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout";
-import { resources } from "./config/resources";
 
 
 

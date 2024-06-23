@@ -67,7 +67,7 @@ const CurrentUser = () => {
                 <AccountSettings
                   opened={isOpen}
                   setOpened={setIsOpen}
-                  userId={user.id}
+                  user={user}
                 />
         )}
         </>

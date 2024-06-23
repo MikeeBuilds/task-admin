@@ -3,7 +3,7 @@ import CurrentUser from "./current-user"
 
 const Header = () => {
 
-  const headerStyles: React.CSSProperties = {
+  const headerStyles = {
     background:'#fff',
     display: 'flex',
     justifyContent:'flex-end',
@@ -11,7 +11,7 @@ const Header = () => {
     padding: '0 24px',
     position: 'sticky',
     top: 0,
-    zIndex: 999,
+    zIndex: 
   }
   return (
     <Layout.Header style={headerStyles}>
