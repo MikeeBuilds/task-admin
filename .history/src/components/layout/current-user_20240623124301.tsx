@@ -24,13 +24,7 @@ const CurrentUser = () => {
             >
                 {user?.name}
             </Text>
-            <div style={{
-                borderTop: '1px solid #d9d9d9',
-                padding: '4px',
-                display:'flex',
-                flexDirection: 'column',
-                gap: '4px'
-            }}>
+            <div>
                 <Button
                     style={{ textAlign: 'left' }}
                     icon={<SettingOutlined />}
@@ -51,7 +45,7 @@ const CurrentUser = () => {
                 trigger="click"
                 overlayInnerStyle={{ padding: 0 }}
                 overlayStyle={{ zIndex: 999 }}
-                content={content}
+                
             >
                 <CustomAvatar
                     name={user?.name}

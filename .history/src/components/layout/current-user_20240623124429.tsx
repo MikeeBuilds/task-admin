@@ -29,7 +29,7 @@ const CurrentUser = () => {
                 padding: '4px',
                 display:'flex',
                 flexDirection: 'column',
-                gap: '4px'
+                
             }}>
                 <Button
                     style={{ textAlign: 'left' }}

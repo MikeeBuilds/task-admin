@@ -1,5 +1,5 @@
 import { Popover, Button } from 'antd/lib'
-import React, { useState } from 'react'
+import React from 'react'
 import CustomAvatar from '../custom-avatar'
 import { useGetIdentity } from '@refinedev/core'
 
@@ -8,7 +8,6 @@ import { Text } from '../text'
 import { SettingOutlined } from '@ant-design/icons'
 
 const CurrentUser = () => {
-    const [isOpen, setIsOpen] = useState(false)
     const { data: user } = useGetIdentity<User>()
 
     const content = (
@@ -24,21 +23,15 @@ const CurrentUser = () => {
             >
                 {user?.name}
             </Text>
-            <div style={{
-                borderTop: '1px solid #d9d9d9',
-                padding: '4px',
-                display:'flex',
-                flexDirection: 'column',
-                gap: '4px'
-            }}>
+            <div>
                 <Button
-                    style={{ textAlign: 'left' }}
-                    icon={<SettingOutlined />}
-                    type='text'
-                    block
-                    onClick={() => setIsOpen(true)}
+                  style={{ textAlign: 'left'}}
+                  icon={<SettingOutlined/>}
+                  type='text'
+                  block
+                  onClick={() => set}
                 >
-                    Account Settings
+
                 </Button>
             </div>
         </div>
@@ -51,7 +44,6 @@ const CurrentUser = () => {
                 trigger="click"
                 overlayInnerStyle={{ padding: 0 }}
                 overlayStyle={{ zIndex: 999 }}
-                content={content}
             >
                 <CustomAvatar
                     name={user?.name}

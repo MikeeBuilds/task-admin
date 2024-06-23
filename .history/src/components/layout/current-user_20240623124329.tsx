@@ -24,13 +24,7 @@ const CurrentUser = () => {
             >
                 {user?.name}
             </Text>
-            <div style={{
-                borderTop: '1px solid #d9d9d9',
-                padding: '4px',
-                display:'flex',
-                flexDirection: 'column',
-                gap: '4px'
-            }}>
+            <div style={}>
                 <Button
                     style={{ textAlign: 'left' }}
                     icon={<SettingOutlined />}
