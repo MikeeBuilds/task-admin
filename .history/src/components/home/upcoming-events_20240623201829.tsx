@@ -45,11 +45,7 @@ const UpcomingEvents = () => {
                     <List.Item>
                         <List.Item.Meta
                           avatar={<Badge color={item.color} />}
-                          title={<Text size='xs'>{renderDate}</Text>}
-                          description={<Text ellipsis={{ tooltip: true}}
-                          strong>
-                            {item.title}
-                          </Text>}
+                          title={<Text size='xs'>{ren}</Text>}
                         />
                     </List.Item>
                 )

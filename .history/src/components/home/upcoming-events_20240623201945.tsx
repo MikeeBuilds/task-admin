@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
                           title={<Text size='xs'>{renderDate}</Text>}
                           description={<Text ellipsis={{ tooltip: true}}
                           strong>
-                            {item.title}
+                            
                           </Text>}
                         />
                     </List.Item>

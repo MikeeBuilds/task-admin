@@ -1,9 +1,8 @@
 import { CalendarOutlined } from '@ant-design/icons'
-import { Badge, Card, List } from 'antd'
+import { Card, List } from 'antd'
 import React, { useState } from 'react'
 import { Text } from '../text'
 import UpcomingEventsSkeleton from '../skeleton/upcoming-events'
-import { getDate } from '@/utilities/helpers'
 
 const UpcomingEvents = () => {
  const [isLoading, setIsLoading] = useState(true)
@@ -27,35 +26,17 @@ const UpcomingEvents = () => {
             }
         >
          {isLoading ? (
-            <List
+            <
               itemLayout='horizontal'
               dataSource={Array.from({ length: 5 }).map((_, index ) => ({
                 id: index,
               }))}
-              renderItem={() => <UpcomingEventsSkeleton />}
+              renderItem={() => <UpcomingEventsSkeleton/>}
+            >
             />
          ) : (
-            <List
-             itemLayout='horizontal'
-             dataSource={[]}
-             renderItem={(item) => {
-              const renderDate = getDate(item.startDate, item.endDate)
+            <List>
 
-                return (
-                    <List.Item>
-                        <List.Item.Meta
-                          avatar={<Badge color={item.color} />}
-                          title={<Text size='xs'>{renderDate}</Text>}
-                          description={<Text ellipsis={{ tooltip: true}}
-                          strong>
-                            {item.title}
-                          </Text>}
-                        />
-                    </List.Item>
-                )
-             }}
-            >
-              
             </List>
          )}
         </Card>

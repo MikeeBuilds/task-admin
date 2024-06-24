@@ -47,9 +47,7 @@ const UpcomingEvents = () => {
                           avatar={<Badge color={item.color} />}
                           title={<Text size='xs'>{renderDate}</Text>}
                           description={<Text ellipsis={{ tooltip: true}}
-                          strong>
-                            {item.title}
-                          </Text>}
+                          strong></Text>}
                         />
                     </List.Item>
                 )
