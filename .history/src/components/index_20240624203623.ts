@@ -15,6 +15,5 @@ export {
   AccordionHeaderSkeleton,
   KanbanColumnSkeleton,
   ProjectCardSkeleton,
-  LatestActivitiesSkeleton,
-  DashboardTotalCountCard
+  LatestActivitiesSkeleton
 }

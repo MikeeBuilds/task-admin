@@ -1,13 +1,12 @@
 import { DashboardTotalCountCard } from '@/components'
 import { DealsChart, UpcomingEvents } from '@/components/home'
 import { DASHBOARD_TOTAL_COUNTS_QUERY } from '@/graphql/queries'
-import { DashboardTotalCountsQuery } from '@/graphql/types'
 import { useCustom } from '@refinedev/core'
 import { Col, Row } from 'antd'
 
 
 export const Home = () => {
- const { data, isLoading } = useCustom<DashboardTotalCountsQuery>({
+ const { data, isLoading } = useCustom<Dashboard({
   url: '',
   method: 'get',
   meta: {

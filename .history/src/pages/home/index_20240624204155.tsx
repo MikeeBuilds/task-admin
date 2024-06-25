@@ -7,7 +7,7 @@ import { Col, Row } from 'antd'
 
 
 export const Home = () => {
- const { data, isLoading } = useCustom<DashboardTotalCountsQuery>({
+ const { data, isLoading } = useCustom<DashboardTotalCountsQuery({
   url: '',
   method: 'get',
   meta: {

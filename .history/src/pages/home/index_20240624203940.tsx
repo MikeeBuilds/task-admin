@@ -1,19 +1,10 @@
 import { DashboardTotalCountCard } from '@/components'
 import { DealsChart, UpcomingEvents } from '@/components/home'
-import { DASHBOARD_TOTAL_COUNTS_QUERY } from '@/graphql/queries'
-import { DashboardTotalCountsQuery } from '@/graphql/types'
-import { useCustom } from '@refinedev/core'
 import { Col, Row } from 'antd'
 
 
 export const Home = () => {
- const { data, isLoading } = useCustom<DashboardTotalCountsQuery>({
-  url: '',
-  method: 'get',
-  meta: {
-    gqlQuery: DASHBOARD_TOTAL_COUNTS_QUERY
-  }
- })
+ const { data, }
 
   return (
     <div>
@@ -27,9 +18,9 @@ export const Home = () => {
         </Col>
         <Col xs={24} xl={8}>
           <DashboardTotalCountCard 
-          resource="contacts"
+          resource="contracts"
           isLoading={isLoading}
-          totalCount={data?.data.contacts.totalCount}
+          totalCount={data?.data.contracts.totalCount}
           />
         </Col>
         <Col xs={24} xl={8}>

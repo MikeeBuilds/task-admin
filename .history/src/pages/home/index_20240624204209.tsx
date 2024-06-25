@@ -29,7 +29,7 @@ export const Home = () => {
           <DashboardTotalCountCard 
           resource="contacts"
           isLoading={isLoading}
-          totalCount={data?.data.contacts.totalCount}
+          totalCount={data?.data.contracts.totalCount}
           />
         </Col>
         <Col xs={24} xl={8}>
