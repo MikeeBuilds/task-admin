@@ -17,6 +17,5 @@ export {
   KanbanColumnSkeleton,
   ProjectCardSkeleton,
   LatestActivitiesSkeleton,
-  DashboardTotalCountCard,
-  LatestActivities
+  DashboardTotalCountCard
 }

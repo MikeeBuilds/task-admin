@@ -76,7 +76,7 @@ export const Home = () => {
         }}
       >
         <Col xs={24}>
-        <LatestActivities/>
+        <LatestestActivities/>
         </Col>
         
       </Row>

@@ -1,4 +1,4 @@
-import { DashboardTotalCountCard, LatestActivities } from '@/components'
+import { DashboardTotalCountCard } from '@/components'
 import { DealsChart, UpcomingEvents } from '@/components/home'
 import { DASHBOARD_TOTAL_COUNTS_QUERY } from '@/graphql/queries'
 import { DashboardTotalCountsQuery } from '@/graphql/types'
@@ -70,14 +70,8 @@ export const Home = () => {
       </Row>
 
       <Row
-        gutter={[32, 32]}
-        style={{
-          marginTop: '32px',
-        }}
+        
       >
-        <Col xs={24}>
-        <LatestActivities/>
-        </Col>
         
       </Row>
     </div>
