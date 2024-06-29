@@ -8,7 +8,6 @@ import { USERS_SELECT_QUERY } from '@/graphql/queries'
 
 import { GetFieldsFromList } from '@refinedev/nestjs-query'
 import { UsersSelectQuery } from '@/graphql/types'
-import { SelectOptionWithAvatar } from '@/components'
 
 const Create = () => {
   const go = useGo();
